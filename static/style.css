@@ -1,0 +1,263 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+:root{
+    --col-cart-bg: hsl(213, 19%, 18%);
+    --col-bg: hsl(216, 12%, 8%);
+
+    --col-gr-dk: hsl(216, 12%, 54%);
+    --col-gr-lt: hsl(217, 12%, 63%);
+
+    --col-prim-acc: hsl(25, 97%, 53%);
+    --col-prim-wh: hsl(0, 0%, 100%);
+    --col-crcl: hsl(235, 10%, 25%);
+}
+
+html{
+    font-size: 62.5%;
+    font-size: 1.5rem;
+}
+
+body {
+    background-color: var(--col-bg);
+    color: var(--col-prim-wh);
+    font-family: Overpass, sans-serif;
+    font-weight: 400;
+
+}
+
+.container {
+    /* background-color: var(--col-cart-bg); */
+    background: linear-gradient(180deg, rgba(46,55,69,1) 4%, rgba(34,38,43,1) 57%);
+    margin: 10rem auto;    
+    height: 19rem;    
+    width: 17rem;
+    padding: 1.2rem;
+    border-radius: 1rem;
+}
+
+@media(min-width:640px){
+  .container{
+    width: 19rem;
+  }
+}
+
+.star-icon {
+    height: 2rem;
+    width: 2rem;
+    background-color: var(--col-crcl);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+}
+
+.star-icon img{
+    width: 35%;
+    height: 35%;
+}
+
+.text{
+    margin-top: 1rem;
+    font-size: 0.75rem;
+    
+}
+
+h1 {
+    font-size: 1.3rem;
+}
+
+p{
+    margin-top: 0.4rem;
+    color: var(--col-gr-lt);
+    margin-right: -0.5rem;
+}
+
+.mg-left{
+    text-align: left;
+}
+
+.mg-ctr {
+    text-align: center;
+}
+
+.rating-choice{
+    margin-top: 1.4rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.btn-choice {
+    background-color: var(--col-crcl);
+    border: none;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--col-gr-lt);
+    font-size: 0.7rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.btn-choice-selected {
+  background-color: var(--col-prim-acc);
+  color: var(--col-prim-wh);
+}
+
+.btn-choice-b4-selected {
+  background-color: var(--col-gr-dk);
+  color: var(--col-prim-wh);
+}
+
+.btn-submit {
+    margin-top: 1.5rem;
+    width: 100%;
+    height: 2.5rem;
+    display: block;
+    background-color: var(--col-prim-acc);
+    border: none;
+    border-radius: 1.25rem;
+    cursor: pointer;
+    text-align: center;
+}
+#link-btn{
+  margin-top: -0.8rem;
+}
+.btn-submit-error {
+  margin-top: 1.5rem;
+  width: 100%;
+  height: 2.5rem;
+  display: block;
+  background-color: var(--col-prim-acc);
+  border: none;
+  border-radius: 1.25rem;
+  cursor: pointer;
+  border: 2px solid red;
+}
+
+.btn-submit a{
+    text-decoration: none;
+    color: var(--col-prim-wh);
+    font-size: 0.7rem;
+    letter-spacing: 3px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    padding-top: 0.75rem;    
+}
+.thx-img{
+  margin: 1rem auto;
+  display: flex;
+  justify-content: center;
+}
+
+.thx-img img{
+  width: 50%;
+}
+
+.rating-choosen {
+  margin-top: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.5rem;
+  text-align: center;  
+  font-size: 0.7rem;
+  height: 1.4rem;
+  width: 60%;
+  border-radius: 0.7rem;
+  background: var(--col-crcl);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--col-prim-acc);
+}
+.msg-bottom{
+  text-align: center;
+  font-size: 0.9rem;
+  color: red;
+}
+
+.btn-anim{
+  border: 3px solid red;
+}
+.foot{
+  text-align: center;
+  font-size: 0.7rem;
+}
