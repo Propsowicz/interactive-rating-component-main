@@ -1,7 +1,7 @@
 const serviceRatings = document.querySelectorAll('.btn-choice')
 
 for(var i = 0; i < serviceRatings.length; i++){    
-    serviceRatings[i].addEventListener('click', selectRating)
+    serviceRatings[i].addEventListener('mouseover', selectRating)
     
     function selectRating(e){  
         if(e.target.id.slice(-1) > 1){
