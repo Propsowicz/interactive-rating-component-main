@@ -1,6 +1,6 @@
 # Interactive rating component (frontend project)
 
-The document template was created as one of ```https://www.frontendmentor.io/``` challenges. The frontendmentor application shares assests to code webpage by yourself.
+The document template was created as one of ```https://www.frontendmentor.io/``` challenges. The frontendmentor application shares assets to code webpage by yourself.
  
 This is one was my first time using JavaScript.  
 
