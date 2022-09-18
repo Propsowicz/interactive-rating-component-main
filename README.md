@@ -22,7 +22,7 @@ This is one was my first time using JavaScript.
 
 Main component:
 
-![main](https://https://github.com/Propsowicz/interactive-rating-component-main/blob/main/intr-1.webp?raw=true)
+![main](https://github.com/Propsowicz/interactive-rating-component-main/blob/main/intr-1.webp?raw=true)
 
 'Thank you' page:
 
