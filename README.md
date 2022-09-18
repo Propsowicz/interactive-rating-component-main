@@ -1,4 +1,4 @@
-# Landing Page (frontend project)
+# Interactive rating component (frontend project)
 
 The document template was created as one of ```https://www.frontendmentor.io/``` challenges. The frontendmentor application shares assests to code webpage by yourself.
  
@@ -7,7 +7,7 @@ This is one was my first time using JavaScript.
 ## Demo
 
 
-[Project DEMO](https://propsowicz.github.io/huddle-landing-page-with-alternating-feature-blocks-master/)
+[Project DEMO](https://propsowicz.github.io/interactive-rating-component-main/)
 
 
 ## Technologies
